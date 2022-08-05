@@ -1,3 +1,18 @@
+html {
+  box-sizing: border-box;
+}
+
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+
+img {
+    box-sizing: content-box;
+}
+
+
 button {
     display: inline-block;
     background-color: #b1340e;
@@ -19,12 +34,14 @@ button:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
+
 button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
   }
+
   
 button span:after {
     content: '\00bb';
@@ -35,6 +52,7 @@ button span:after {
     transition: 0.5s;
   }
   
+
 button:hover span {
     padding-right: 25px;
   }
