@@ -9,8 +9,7 @@ html {
 
 
 img {
-    box-sizing: content-box;
-
+  box-sizing: content-box;
 }
 
 body, html {
@@ -26,28 +25,40 @@ body, html {
   background-size: cover;
 }
 
-.menu-container {
+.menu-container  {
   display: flex;
-  justify-content: center
+  flex: 1 1 auto;
+  align-items: center;
+  flex-direction: column;
 }
 
 .header {
   display: flex;
   justify-content: center;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 15px;
+  font-size: 50px;
+  font-style: italic;
+}
+
+a {
+  text-decoration: none;
 }
 
 button {
     display: inline-block;
     background-color: white;
     border: none;
+    border-radius: 20px;
     color: black;
     text-align: center;
     font-size: 28px;
     padding: 20px;
-    width: 200px;
+    margin: 10px;
+    width: 25%;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 5px;
 }
 
 
